@@ -31,3 +31,9 @@ This project focuses on validating 10,000+ PAN numbers using SQL-based data clea
    - ❌ **Invalid PAN**  
    - ⚠️ **Incomplete / Missing Data**
 
+## Summary & Categorization
+<img width="463" height="119" alt="summary" src="https://github.com/user-attachments/assets/932bbaf1-4964-4835-a9f2-8dd1bbccef4e" /><img width="634" height="364" alt="categorization" src="https://github.com/user-attachments/assets/4696ca3a-d10c-451a-a3e3-fc81d84c23e7" />
+
+
+
+
