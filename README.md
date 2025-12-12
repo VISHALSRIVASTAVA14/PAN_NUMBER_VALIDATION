@@ -2,38 +2,32 @@
 This project focuses on validating 10,000+ PAN numbers using SQL-based data cleaning, rule-based validation, and classification logic in PostgreSQL. The workflow includes data preprocessing, custom validation functions, and final categorization of PAN numbers as Valid, Invalid, or Incomplete.
 .
 
-<h3>📂 Project Overview</h3>
+## 📂 Project Overview
 
-1). Started with an Excel dataset of 10,000 PAN numbers.
+1. **Started with an Excel dataset of 10,000 PAN numbers.**
 
-2). Converted the dataset into CSV format for smooth database import.
+2. **Converted the dataset into CSV format** for smooth database import.
 
-3). Imported the data into PostgreSQL using SQL commands.
+3. **Imported the data into PostgreSQL** using SQL commands.
 
-4). Performed data cleaning (trimming, case normalization, removing blanks).
+4. **Performed data cleaning**:
+   - Trimmed spaces  
+   - Converted values to UPPERCASE  
+   - Removed blank or null entries  
 
-5). Implemented PAN format validation rules:
+5. **Implemented PAN format validation rules**:
+   - **First 5 characters → Alphabets (A–Z)**
+   - **Next 4 characters → Digits (0–9)**
+   - **Last character → Alphabet (A–Z)**
+   - Removed entries with **incomplete or missing values**
 
-    a). First 5 characters → Alphabets
-  
-    b). Next 4 characters → Digits
-  
-    c). Last character → Alphabet
-  
-    d). Removed entries with incomplete or missing values
+6. **Created custom SQL validation functions** to identify:
+   - Adjacent repeating letters  
+   - Sequential alphabetical patterns  
+   - Structural format errors based on PAN rules
 
-6). Created custom SQL functions to detect:
-  
-    a). Adjacent repeating letters
-  
-    b). Sequential alphabetical patterns
-  
-    c). Structural format errors
+7. **Classified each PAN number** into categories:
+   - ✔️ **Valid PAN**  
+   - ❌ **Invalid PAN**  
+   - ⚠️ **Incomplete / Missing Data**
 
-7). Classified each PAN number into:
-  
-    ✔️ Valid PAN
-    
-    ❌ Invalid PAN
-    
-    ⚠️ Incomplete / Missing Data
